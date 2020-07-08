@@ -1,0 +1,39 @@
+
+<style>
+html {
+  scroll-behavior: smooth;
+}
+.title-font1{
+   width: 30%;
+  max-width: 30rem;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  font-size:2rem;
+  font-weight: 400;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 5s steps(27), blink 1s ease-in-out 5s infinite;
+  width: 20ch;
+  margin:auto;
+  border-right: 4px solid rgba(255, 255, 255, 1)
+}
+
+@keyframes typing{
+  0%{
+    width: 0ch;
+    color: rgba(249, 105, 14, 1)
+  }
+  100%{
+    width: 27ch;
+  }
+}
+
+@keyframes blink{
+  0%{
+    border-right: 4px solid rgba(255, 255, 255, 0);
+  }
+  100%{
+    border-right: 4px solid rgb(194, 194, 194);
+  }
+}
+</style>
