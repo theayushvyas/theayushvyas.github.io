@@ -12,23 +12,32 @@
       
         <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
       </svg>
-      <span class="ml-3 text-white" id="About">Personal PortFolio</span>
+      <span class="ml-3 text-white" id="Top">Personal Portfolio</span>
     </a>
     <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-      <a href="#About" class="mr-5 hover:text-white">About</a>
-      <a href="#Skills" class="mr-5 hover:text-white">Skills</a>
-      <a href="#Projects"class="mr-5 hover:text-white">Projects</a>
-      <a href="#Certifications"class="mr-5 hover:text-white">Certifications/Trainings</a>
-      <a href="#Contact"class="mr-5 hover:text-white">Contact</a>
+    	<div class="toggle">
+    		<div class="menu"><i class="fa fa-bars "aria-hidden="true"></i></div>
+    	</div>
+      <ul>
+      	<li><a href="#Home" class="mr-5 hover:text-white">Home</a></li>
+      <li><a href="#About" class="mr-5 hover:text-white">About</a></li>
+      <li><a href="#Skills" class="mr-5 hover:text-white">Skills</a></li>
+      <li><a href="#Projects"class="mr-5 hover:text-white">Projects</a></li>
+      <li><a href="#Certifications"class="mr-5 hover:text-white">Certifications</a></li>
+      <li><a href="#Contact"class="mr-5 hover:text-white">Contact</a></li>
+  </ul>
     </nav>
-   
-      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-        
-      </svg>
-    </button>
-  </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript">
+    	$(document).ready(function(){
+    		$('.menu').click(function(){
+    			$('ul').toggleClass('active');
+    		})
+    	})
+    </script>
+     </div>
 </header>
-<section class="S1">
+<section class="S1" id="Home">
   <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
     <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src="ok1.png">
     <div class="text-center lg:w-2/3 w-full">
@@ -37,6 +46,17 @@
       <div class="flex justify-center">
         <a href="Resume_AyushVyas_Java (1).pdf" class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"  target="_new">Download CV</a>
         </div>
+    </div>
+  </div>
+</section>
+<section class="ST" id="About">
+  <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+    <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src="dp.jpeg" id="img">
+    <div class="text-center lg:w-2/3 w-full">
+      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Hi,</h1>
+      <h2><strong>I am Ayush Vyas , A B tech(CS) Student, From ITM University ,Gwalior and based out of Bengaluru.I am a Java Developer and know Java Technologies like J2EE , JSP , Database connection & Operations and some Web Development Technologies like HTML-CSS ,JavaScript, Jquery and also Trained in RSA Archer GRC  </strong></h2>
+      <div class="flex justify-center">
+       </div>
     </div>
   </div>
 </section>
@@ -264,16 +284,21 @@
     <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
       <p class="text-gray-600 text-sm text-center sm:text-left">Contacts
         <a href="https://www.linkedin.com/in/ayush-vyas-b26342194/" rel="noopener noreferrer" class="text-gray-500 ml-1" target="_blank">@AyushVyas</a>
-      </p>
-        <a class="text-gray-600"><a href="#About" class="flex mx-auto  text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Back To Top</a>
-          
-  </div>
+<a class="text-gray-600"><a href="#Top" class="flex mx-auto  text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Back To Top</a>
 </footer>
  </section>
  <style>
 html {
   scroll-behavior: smooth;
 }
+		
+#img {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+
+}
+
 </style>
 </body>
 </html>

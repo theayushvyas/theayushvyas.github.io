@@ -3,6 +3,42 @@
 html {
   scroll-behavior: smooth;
 }
+.ST{
+  background-color: #20B2AA;
+  height: 600px;
+}
+ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 20px;
+}
+.toggle{
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #001f44;
+  text-align: right;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 30px;
+  display: none;
+}
+@media (max-width: 768px)
+{
+  .toggle{
+    display: block;
+  }
+  ul{
+    width: 100%;
+    display: none;
+  }
+  ul li{
+    display: block;
+    text-align: center;
+  }
+  .active{
+    display: block;
+  }
+}
 .title-font1{
    width: 30%;
   max-width: 30rem;
@@ -17,6 +53,7 @@ html {
   margin:auto;
   border-right: 4px solid rgba(255, 255, 255, 1)
 }
+
 
 @keyframes typing{
   0%{
